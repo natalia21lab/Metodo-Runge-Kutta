@@ -24,15 +24,15 @@ Returns:
    """
 return np.dot(oOper, state)
 
-    
-
-    return dyn_generator 
+La otra función que debe implementarse es propiamente la del método Runge Kutta: 
 
 def rk4(func, oper, state, h):
-"""La función Runge Kutta"""
+"""La función Runge Kutta
     t_values = np.arange(t0, t_end + dt, dt)
     y_values = np.zeros(len(t_values))
     y_values[0] = y0
+
+"""
 
 Aquí el usuario debe introducir valores y realizar el for loop. 
 
