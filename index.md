@@ -9,3 +9,5 @@ $$
 $$ 
 
 Donde y es un estado del sistema, a la vez que t es la variable temporal.  
+
+Sin embargo, en f(t,y) = -i[O, y(t)] 
