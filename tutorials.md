@@ -5,11 +5,26 @@ En esta parte se muestran las funciones que se deben implementar para resolver e
 
 Por ejemplo, primero debe implementarse la función que genera el estado dinámico: 
 
-def dyn_generator(oper, state):
-"""Genera la función de estado dinámico"""
-    oOper= np.array([[0, 1], [1, 0]])
-    state= np.array([[1, 0], [0, 0]])
-    dyn= np.dot(oOper, state) 
+def dyn_generator(oper,state):
+"""Genera la función de estado dinámico
+
+Ejemplos: 
+   >>> np.dot(oOper, state)
+   np.array([0,0], [0,0]])
+
+Args: 
+
+   np.oOper(list): primer argumento
+   np.state(list): segundo argumento 
+
+Returns: 
+
+   list: retorna el resultado de multiplicar `np.oOper` y `np.state`
+
+   """
+return np.dot(oOper, state)
+
+    
 
     return dyn_generator 
 
@@ -34,3 +49,20 @@ for tt in range(times.size):
     # De esta manera, en la siguiente iteración, el operador de esta iteración se convierte en el inicial
     # de la siguiente iteración
     yInit = yN
+
+    def sum(a, b):
+    """Sum of two floats.
+
+    Examples:
+        >>> sum(3.0, 4.0)
+        7.0
+
+    Args:
+        a (float): First argument
+        b (float): Second argument
+
+    Returns:
+        float: Returns the sum operation of `a` and `b`.
+
+    """
+    return a + b
