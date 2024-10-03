@@ -5,7 +5,7 @@ Este es uno de los métodos más utilizados para resolver numéricamente problem
 $$
 f(x,y,\frac{dy}{dx})= 0 
 $$
-
+Con 
 $$
-con {y(x_0)}= {y_0}  
+{y(x_0)}= {y_0}  
 $$ 
