@@ -27,6 +27,7 @@ return np.dot(oOper, state)
 La otra función que debe implementarse es propiamente la del método Runge Kutta: 
 
 def rk4(func, oper, state, h):
+
 """La función Runge Kutta
     t_values = np.arange(t0, t_end + dt, dt)
     y_values = np.zeros(len(t_values))
@@ -37,32 +38,18 @@ def rk4(func, oper, state, h):
 Aquí el usuario debe introducir valores y realizar el for loop. 
 
 for tt in range(times.size):
-    # Guarde el valor de las entradas (0,0) y (1,1) en los arreglos que definimos
-    # Obtenga estos valores de las entradas de yInit
-    # Código aquí ->
-    
-    # Invoque rk4 operando sobre yInit
-    # y devuelva el resultado a un nuevo yN
-    # Código aquí ->
+""" Este es el ciclo que va a iterar sobre los valores definidos previamente, debe escribir un código
+
+Seguidamente, se obtienen los valores de las entradas de yInit: 
+
+    #Aquí deben obtenerse los valores de las entradas de yInit mediante un código
+    #Aquí se invoca el método rk4 operando sobre yInit y se devuelve el resultado a un nuevo yN:        
+
+Finalmente, se asigna yN a yInit para iterar y obtener los valores de k de forma consecutiva. 
     
     # Ahora asignamos yN a yInit
     # De esta manera, en la siguiente iteración, el operador de esta iteración se convierte en el inicial
     # de la siguiente iteración
     yInit = yN
 
-    def sum(a, b):
-    """Sum of two floats.
-
-    Examples:
-        >>> sum(3.0, 4.0)
-        7.0
-
-    Args:
-        a (float): First argument
-        b (float): Second argument
-
-    Returns:
-        float: Returns the sum operation of `a` and `b`.
-
-    """
-    return a + b
+    
