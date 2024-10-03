@@ -11,3 +11,9 @@ Con
 $$
 {y(x_0)}= {y_0}  
 $$ 
+
+El método es útil cuando la solución no puede hallarse mediante otros métodos. El método para este problema está dado por esta ecuación: 
+
+$$
+{y(i+1)= {y_i} + \frac{1}{6}({k_1} + 2{k_2} + 2{k_3} + {k_4}) 
+$$ 
