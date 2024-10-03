@@ -2,3 +2,4 @@
 
 Se muestra un gráfico con la pendiente calculada con el método. 
 
+![]()
