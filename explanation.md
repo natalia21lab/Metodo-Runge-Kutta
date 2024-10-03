@@ -26,12 +26,15 @@ El método RK4 utiliza un tamaño de paso h y n número de iteraciones. Además,
 
 
 
-Entonces el siguiente valor (yi+1) es determinado por el valor (yi) actual sumándole el producto del tamaño del intervalo (h) por una pendiente estimada. La pendiente un promedio ponderado de pendientes:
+Entonces el siguiente valor (yi+1) es determinado por el valor (yi) actual sumándole el producto del tamaño del intervalo h por una pendiente estimada. La pendiente es un promedio ponderado de pendientes:
 
-k1 es la pendiente al principio del intervalo.
-k2 es la pendiente en el punto medio del intervalo, usando k1 para determinar el valor de y en el punto xi + h/2.
-k3 es otra vez la pendiente del punto medio, pero ahora usando k2 para determinar el valor de y
+k1 es la pendiente al principio del intervalo /
+
+k2 es la pendiente en el punto medio del intervalo, usando k1 para determinar el valor de y en el punto xi + h/2. /
+
+k3 es otra vez la pendiente del punto medio, pero ahora usando k2 para determinar el valor de y/ 
+
 k4 es la pendiente al final del intervalo, con el valor de y determinado por k3
 
-Finalmente, se promedian las 4 pendiente y se le asigna mayor peso a las pendiente en el punto medio. 
+Finalmente, se promedian las 4 pendientes y se le asigna mayor peso a las pendientes en el punto medio. 
 
