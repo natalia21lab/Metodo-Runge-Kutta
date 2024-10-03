@@ -15,5 +15,23 @@ $$
 El método es útil cuando la solución no puede hallarse mediante otros métodos. El método para este problema está dado por esta ecuación: 
 
 $$
-{y_(i+1)}= {y_i} + \frac{1}{6}[{k_1} + 2{k_2} + 2{k_3} + {k_4}] 
+y_{i+1}= {y_i} + \frac{1}{6}[{k_1} + 2{k_2} + 2{k_3} + {k_4}] 
 $$ 
+
+El método RK4 utiliza un tamaño de paso h y n número de iteraciones. Además, para i=0,…, n-1 la solución se da a lo largo del intervalo (xo,xo+hn), Donde
+
+
+
+
+
+
+
+Entonces el siguiente valor (yi+1) es determinado por el valor (yi) actual sumándole el producto del tamaño del intervalo (h) por una pendiente estimada. La pendiente un promedio ponderado de pendientes:
+
+k1 es la pendiente al principio del intervalo.
+k2 es la pendiente en el punto medio del intervalo, usando k1 para determinar el valor de y en el punto xi + h/2.
+k3 es otra vez la pendiente del punto medio, pero ahora usando k2 para determinar el valor de y
+k4 es la pendiente al final del intervalo, con el valor de y determinado por k3
+
+Finalmente, se promedian las 4 pendiente y se le asigna mayor peso a las pendiente en el punto medio. 
+
