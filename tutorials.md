@@ -6,6 +6,7 @@ En esta parte se muestran las funciones que se deben implementar para resolver e
 Por ejemplo, primero debe implementarse la función que genera el estado dinámico: 
 
 def dyn_generator(oper, state):
+"""Este es el docstring de la función"""
     oOper= np.array([[0, 1], [1, 0]])
     state= np.array([[1, 0], [0, 0]])
     dyn= np.dot(oOper, state) 
@@ -13,6 +14,7 @@ def dyn_generator(oper, state):
     return dyn_generator 
 
 def rk4(func, oper, state, h):
+"""Este es el docstring de la función"""
     t_values = np.arange(t0, t_end + dt, dt)
     y_values = np.zeros(len(t_values))
     y_values[0] = y0
